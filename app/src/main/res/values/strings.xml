@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Car Yard Demo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_car_btn_text">New Car</string>
+    <string name="price">Price</string>
+    <string name="rego">Rego</string>
+    <string name="color">Color</string>
+    <string name="year_of_manufacture">Year of Manufacture</string>
+    <string name="make_model"><![CDATA[Make & model]]></string>
+    <string name="save">Save</string>
+</resources>
