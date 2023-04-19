@@ -83,32 +83,28 @@ public class CarDetailsFragment extends Fragment {
 
             // validating fields
             if(carMakeET.getText().toString().isEmpty()) {
-                showToast("Car make & model field is required");
+                showToast("Make & model field is required");
                 carMakeET.requestFocus();
                 carMakeET.setError("required");
             } else if(carManYrET.getText().toString().isEmpty()) {
-                showToast("Car make & model field is required");
+                showToast("Manufacture year field is required");
                 carManYrET.requestFocus();
                 carManYrET.setError("required");
             } else if(carColorET.getText().toString().isEmpty()) {
-                showToast("Car make & model field is required");
+                showToast("Color field is required");
                 carColorET.requestFocus();
                 carColorET.setError("required");
             } else if(carRegoET.getText().toString().isEmpty()) {
-                showToast("Car make & model field is required");
+                showToast("Rego field is required");
                 carRegoET.requestFocus();
                 carRegoET.setError("required");
             } else if(carPriceET.getText().toString().isEmpty()) {
-                showToast("Car make & model field is required");
+                showToast("Price field is required");
                 carPriceET.requestFocus();
                 carPriceET.setError("required");
             } else {
 
-
-
                 //save to database
-
-
                 // run db operations inside thread to avoid stalling the activity
                 new Thread (() -> {
                     // populate data
@@ -149,4 +145,5 @@ public class CarDetailsFragment extends Fragment {
     void showToast(String msg) {
         Toast.makeText(requireContext(), msg, Toast.LENGTH_LONG).show();
     }
+
 }
